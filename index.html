@@ -1,49 +1,98 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>GrainForge</title>
+    <title>GrainForge</title>
 
-<style>
-body{
-font-family:-apple-system,BlinkMacSystemFont,sans-serif;
-max-width:800px;
-margin:auto;
-padding:40px;
-text-align:center;
-}
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #111;
+            color: white;
+            margin: 0;
+            padding: 40px 20px;
+            text-align: center;
+        }
 
-h1{
-font-size:3rem;
-}
+        .container {
+            max-width: 1000px;
+            margin: auto;
+        }
 
-.button{
-display:inline-block;
-padding:15px 30px;
-background:black;
-color:white;
-text-decoration:none;
-border-radius:10px;
-font-weight:bold;
-margin-top:20px;
-}
-</style>
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            max-width: 700px;
+            margin: 0 auto 30px auto;
+        }
+
+        .download-button {
+            display: inline-block;
+            background: white;
+            color: black;
+            text-decoration: none;
+            padding: 16px 32px;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: transform 0.2s;
+        }
+
+        .download-button:hover {
+            transform: scale(1.03);
+        }
+
+        .screenshot {
+            width: 100%;
+            max-width: 900px;
+            margin-top: 50px;
+            border-radius: 16px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+        }
+
+        .footer {
+            margin-top: 40px;
+            opacity: 0.7;
+            font-size: 0.9rem;
+        }
+    </style>
 </head>
-
 <body>
 
-<h1>GrainForge</h1>
+<div class="container">
 
-<p>
-AI assistant per musicisti, produttori e sound designer.
-</p>
+    <h1>GrainForge</h1>
 
-<a class="button"
-href="https://github.com/iamsambianchi-me/grainforge-app/releases/latest">
-Scarica per macOS
-</a>
+    <p>
+        Sample Generator for producers and sound designers.
+        
+    </p>
+
+    <a
+        class="download-button"
+        href="https://github.com/iamsambianchi-me/grainforge-app/releases/latest">
+        Download for macOS
+    </a>
+
+    <br>
+
+    <img
+        class="screenshot"
+        src="screenshot.jpg"
+        alt="Screenshot di GrainForge">
+
+    <div class="footer">
+        Free version • macOS
+    </div>
+
+</div>
 
 </body>
 </html>
